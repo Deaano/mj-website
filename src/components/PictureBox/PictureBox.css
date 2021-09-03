@@ -17,3 +17,14 @@
     width: 50%;
     height: inherit;
 }
+
+@media (max-width:500px){
+    .picture-box-container{
+        display: block;
+    }
+
+    .picture-box-img{
+        width: 100%;
+        margin-bottom: -5px;
+    }
+}

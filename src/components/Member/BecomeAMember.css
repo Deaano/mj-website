@@ -42,8 +42,15 @@
 
 @media (max-width:1080px){
     .become-a-member-container{
-        position: absolute;
+        
         top: 0;
         right: 0;
+    }
+}
+@media (max-width:500px){
+    .become-a-member-container{
+        
+        top: 0;
+        right: 30px;
     }
 }

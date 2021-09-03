@@ -10,10 +10,10 @@ body{
 
 @media (max-width:800px){
     body{
-        width:100%;
-        margin-left: 10px;
+        max-width: 100%;
         border: none;
-        overflow-x: hidden;
+        margin-right: -35px;
+       
     }
 
 }

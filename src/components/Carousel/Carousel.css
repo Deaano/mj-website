@@ -26,6 +26,7 @@ body{
 @media (max-width: 1180px){
     .carousel{
 padding-left: 5.5px;
+min-width: 100vw;
     }
     
     body{
@@ -34,14 +35,3 @@ padding-left: 5.5px;
     }
 }
 
-@media (max-width:600px){
-    .carousel-body{
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-
-    .carousel{
-        margin-left: -10px;
-        margin-right: -10px;
-    }
-}

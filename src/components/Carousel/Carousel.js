@@ -39,12 +39,12 @@ const useStyles = makeStyles((theme) => ({
     height:  '500px',
     paddingLeft: theme.spacing(4),
     backgroundColor: theme.palette.background.default,
-    overflowX:'hidden'
+    overflowX:'auto'
   },
   img: {
     maxHeight: '80%',
     display: 'block',
-    width: 500,
+    width: '100vw',
     
   },
 }));

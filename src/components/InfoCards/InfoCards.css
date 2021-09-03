@@ -71,12 +71,12 @@
     .paragraph{
         margin-top: 5vw;
     }
+    
 }
 @media (max-width:800px){
     
     .infocards-container{
         width: 100%;
-        margin-left: 0;
     }
 
     .paragraph{
@@ -88,6 +88,12 @@
     }
     .card-container{
         width: 100%;
+        padding: 0 20px 0 25px;
+        
+    }
+
+    .card-img{
+        width: 100%;
     }
     
     
@@ -96,5 +102,8 @@
 @media (max-width:560px){
     .paragraph{
         margin-top: 2vw;
+        font-size: 4.5vw;
+        margin-left: 30px;
     }
-}
+    
+    }
