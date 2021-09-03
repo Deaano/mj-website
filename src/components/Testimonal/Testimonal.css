@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.testimonal-container{
+    display: flex;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 19rem;
+}
+
+.testimonal-title{
+    margin-bottom: -18px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.testimonal-text{
+    font-family: 'Courier-new', monospace;
+    color: rgb(88, 88, 88);
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+
+.testimonal-safely-sourced-container{
+    background-color: black;
+    color: white;
+    height: fit-content;
+    margin-top: 20px;
+    
+}
+
+.testimonal-img{
+    width:310px;
+}
+
+.safely-sourced-title{
+    font-family: 'Courier Prime', monospace;
+    padding: 5px 8px 2px 8px;
+    font-size: 1.02rem;
+    
+    
+}
+
+.safely-sourced-info{
+    padding: 0 10px 5px 8px;
+    line-height: 1.3;
+    font-family: 'Courier-new', monospace;
+    font-size: 0.9rem;
+    
+    
+}
+

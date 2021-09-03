@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.picture-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 18rem;
+}
+
+.picture-box-img{
+    width: 50%;
+    height: inherit;
+}

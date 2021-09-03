@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.become-a-member-container{
+    width: 85px;
+    height: 70px;
+    background-color: #ef2f65;
+    position:fixed;
+    right: 0;
+    top: 53.5%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+   
+}
+
+.become-a-member-title{
+    text-align: center;
+    font-size: 1.1rem;
+    
+    font-style: normal;
+    margin-top: 16%;
+    margin-bottom: 10%;
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    
+    padding: 2%;
+    width: 90%;
+    text-transform: uppercase;
+    
+    
+    
+}
+
+.become-a-member-container:hover{
+    background-color: black;
+    
+}
+
+@media (max-width:1080px){
+    .become-a-member-container{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}

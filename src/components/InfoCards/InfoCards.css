@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.infoCard{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.infocards-container{
+    width: 62%;
+    margin-left: 5.2%;
+    margin-top: 28px;
+}
+
+
+.paragraph{
+    text-align: center;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 1.1rem;
+    letter-spacing: -0.5px;
+    margin-top: 16.9vw;
+    
+}
+
+.card-container{
+    width: 315px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+
+.card-img{
+    width: 100%;
+    height: 77%;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.card-title{
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;;
+}
+
+.card-info{
+    font-family: 'Courier-new', monospace;
+    font-weight: 0;
+    font-size: 0.9em;
+    line-height: 1.3;
+}
+
+@media(max-width:1180px){
+    .paragraph{
+        margin-top: 13vw;
+        width: 100%;
+    }
+}
+
+@media (max-width:900px){
+    .paragraph{
+        margin-top: 5vw;
+    }
+}
+@media (max-width:800px){
+    
+    .infocards-container{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .paragraph{
+        font-size: 1.1rem;
+        width: 86%;
+        margin-left: 7%;
+        line-height: 1.15;
+        margin-top: 15vw;
+    }
+    .card-container{
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width:560px){
+    .paragraph{
+        margin-top: 2vw;
+    }
+}
