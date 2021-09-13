@@ -49,8 +49,7 @@
 }
 @media (max-width:500px){
     .become-a-member-container{
-        
         top: 0;
-        right: 30px;
+        right: 0px;
     }
 }

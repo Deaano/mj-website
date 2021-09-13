@@ -11,20 +11,25 @@
     margin-left: 2%;
     margin-right: 2%;
     height: 18rem;
+    
 }
 
 .picture-box-img{
     width: 50%;
-    height: inherit;
+    
 }
 
 @media (max-width:500px){
     .picture-box-container{
         display: block;
+        height: auto;
     }
 
     .picture-box-img{
-        width: 100%;
+        width: 90vw;
         margin-bottom: -5px;
+        margin-left: 4vw;
+        margin-right: 5vw;
+        height: 190px;
     }
 }

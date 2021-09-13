@@ -82,7 +82,7 @@
     .paragraph{
         font-size: 1.1rem;
         width: 86%;
-        margin-left: 7%;
+        margin-left: 3.5%;
         line-height: 1.15;
         margin-top: 15vw;
     }
@@ -102,8 +102,8 @@
 @media (max-width:560px){
     .paragraph{
         margin-top: 2vw;
-        font-size: 4.5vw;
-        margin-left: 30px;
+        font-size: 3.8vw;
+        margin-left: 10px;
     }
     
     }

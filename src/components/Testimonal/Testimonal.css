@@ -9,7 +9,7 @@
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 19rem;
+    margin-top: 9rem;
 }
 
 .testimonal-title{
@@ -54,3 +54,28 @@
     
 }
 
+@media (max-width:800px){
+    .testimonal-container{
+        display: block;
+        margin-top: 25px;
+        width: 100%;
+        margin-top: 8.5rem;
+       
+    }
+}
+
+
+
+@media (max-width:500px){
+    .testimonal-container{
+        display: block;
+        margin-top: 25px;
+        width: 90vw;
+        padding-left: 24px;
+        position: relative;
+    }
+}
+
+.testimonal-img{
+    width: 100%;
+}
