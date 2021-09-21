@@ -5,10 +5,10 @@ import './PictureBox.css'
 function PictureBox() {
     return (
         <div className='picture-box-container'>
-            <img className='picture-box-img' src={EFSR}  /> 
-            <img className='picture-box-img' src='https://www.mjseafood.com/assets/uploads/images/large/8188b638-0c38-4e25-a694-c2eb377285f1.jpg' /> 
-            <img className='picture-box-img' src='https://www.mjseafood.com/assets/uploads/images/large/a96ecf67-e839-4fa0-b8ca-151dbfbd940d.jpg' />
-            <img className='picture-box-img' src={SOTE}        />
+            <img className='picture-box-img' alt='picture1' src={EFSR}  /> 
+            <img className='picture-box-img' alt='picture2' src='https://www.mjseafood.com/assets/uploads/images/large/8188b638-0c38-4e25-a694-c2eb377285f1.jpg' /> 
+            <img className='picture-box-img' alt='picture3' src='https://www.mjseafood.com/assets/uploads/images/large/a96ecf67-e839-4fa0-b8ca-151dbfbd940d.jpg' />
+            <img className='picture-box-img' alt='picture4' src={SOTE}        />
         </div>
     )
 }

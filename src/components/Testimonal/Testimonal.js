@@ -14,7 +14,7 @@ function Testimonal() {
             </div>
             
             <div className='testimonal-safely-sourced-container'>
-            <img className='testimonal-img' src='https://www.mjseafood.com/assets/uploads/images/large/1fb48d5b-26ac-425f-a841-fc80d677344b.jpg'/>
+            <img className='testimonal-img' alt='Salmon' src='https://www.mjseafood.com/assets/uploads/images/large/1fb48d5b-26ac-425f-a841-fc80d677344b.jpg'/>
             <h3 className='safely-sourced-title'>Safely Sourced Seafood List</h3>
             <p className='safely-sourced-info'>Become part of the Fish2fork, Sustainable Restaurant Association and the Sustainable Fish Cities schemes.</p>
             </div>

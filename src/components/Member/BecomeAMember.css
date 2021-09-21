@@ -20,19 +20,14 @@
 .become-a-member-title{
     text-align: center;
     font-size: 1.1rem;
-    
     font-style: normal;
     margin-top: 16%;
     margin-bottom: 10%;
     font-family: 'Inconsolata', monospace;
     color: #fff;
-    
     padding: 2%;
     width: 90%;
     text-transform: uppercase;
-    
-    
-    
 }
 
 .become-a-member-container:hover{
@@ -42,7 +37,8 @@
 
 @media (max-width:1080px){
     .become-a-member-container{
-        
+        height: fit-content;
+        padding-bottom: 5px;
         top: 0;
         right: 0;
     }
@@ -50,6 +46,7 @@
 @media (max-width:500px){
     .become-a-member-container{
         top: 0;
-        right: 0px;
+        right:0;
+        z-index: 500;
     }
 }

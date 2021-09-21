@@ -5,6 +5,7 @@ import InfoCards from './components/InfoCards/InfoCards';
 import PictureBox from './components/PictureBox/PictureBox'
 import Testimonal from './components/Testimonal/Testimonal';
 import BecomeAMember from './components/Member/BecomeAMember';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -12,9 +13,10 @@ function App() {
      <Nav />
      <Carousel />
      <BecomeAMember />
-     <InfoCards />
+     <InfoCards  />
      <PictureBox />
      <Testimonal />
+     <Footer />
     </div>
   );
 }

@@ -2,7 +2,6 @@ nav{
     border-bottom: 1px solid black;
     width: 95%;
     margin-left: 3%;
-
 }
 
 .nav-links{
@@ -10,16 +9,20 @@ nav{
     justify-content: center;
     margin-top: 23px;
     margin-right: 20px;
-    max-height: 15vh;
-    
-}   
+    max-height: 15vh; 
+}  
+
+/* DeskTop Logo */
 
 .logo{
-    margin: 0 10px;
-    max-height: 100px;
+   border-radius: 100%;
 }
 
+/* mobile Logo */
 
+.mobile-logo{
+    display: none;
+}
 
 .nav-item{
     padding: 20px 10px;
@@ -28,98 +31,122 @@ nav{
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
     margin-top: 53px;
-    transition: all .3s ease-out linear;
+    transition: 0.8s ease-out linear;
 }
 
 .nav-item:hover{
     border: 1px solid black;
-    height: 66px;
+    height: 60px;
     padding: 20px 10px;    
-    transition: all .3s ease-out linear;
+    transition: 0.8s ease-out linear;
     margin-bottom: -15px;
     margin-left: -1px;
     margin-right: 7px;
 }
 
-.mobile-nav{
-    display: none;
-}
-.mobile-menu{
-    display: none;
-}
+@media (max-width:1010px){
+    nav{
+        margin-left: 0;
+    }
 
-@keyframes menuSlider {
-    0%{
-        height: 0;
-        opacity: 0;
-    } 
-    50%{
-        opacity: 0.2;
+   .hidden-nav{
+       transform: translateY(-100%);
+       opacity: 0;
+       margin-top: -120px; 
+       margin-bottom: -350px;
+       border: none;
+       transition: 0.6s ease-in-out;   
+       margin-left: 0;
     }
-    85%{
-        opacity: 0.4;
+
+    .active-nav{
+       transform: translateY(0);
+       opacity: 1;
+       transition: 0.6s ease-in-out;
+       border: none;
+       margin-left: 0;
     }
-    100%{
-        height: 370px;
-        opacity: 1;
+
+    .nav-links{
+        border: none;
+        display: inline-block;
+        width: 100%;
+        margin-top: 0px; 
+        margin-left: 7.5px;    
     }
-}
-@media (max-width:1180px){
+
+    body{
+        width: 100vw;
+    }
+    
     .nav-item{
-        display: none;
+        position: relative;
+        height: 65px; 
+        border: none;
+        margin: 15px 0;
+        width: 100%;
+        justify-content: center;
+        display: flex;
     }
 
-    .logo{
-        margin-left: 10px;
+    .nav-item:hover{
+        transition: 0.2s ;
+        background-color: rgb(245, 241, 241);
+        margin-bottom: 0;
+        border: none; 
     }
+
+    /* Hiding Desktop Logo */
+    
+    .logo{
+       display: none;
+       position:absolute;
+    }
+
+    /* Mobile Logo */
+
+    .mobile-logo-container{
+        display: flex;
+        justify-content: center;
+        position:absolute;
+        right: 40vw;
+        left: 50vw;
+        top: 4vh;
+    }
+    .mobile-logo{
+        display: block;
+        margin-right: 35px;
+        position: relative;
+        z-index: 100;
+    }
+
+    /* menu container */
     
     .mobile-menu{
         display: flex;
         justify-content: space-between;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
-        padding: 15px 15px;
-        margin-top: 10px;
+        padding: 15px 10px;
+        margin-top: 21vh;
+        width: 98%;
+        margin-left: 5px;
     }
+
+    /* menu text */
 
     .menu{
         font-weight: 800;
         font-family: 'Courier New', Courier, monospace;
-        position: relative;
-        left: 10px;
+        
+        
     }
 
     .fa-bars{
         position: relative;
         right: 15px;
     }
-    
 
-    .nav-links-mobile{
-        height: auto;
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin-left: -15px;
-        animation: menuSlider 0.5s forwards;  
-    }
-    
-    
-    
-    .nav-item-mobile{
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 900;
-        list-style-type: none;
-        padding: 23px 30px;
-        width: 100%;
-        text-align: center;
-        
-    }
 
-    .nav-item-mobile:hover{
-        transition: 0.5s ease-in;
-        background-color: rgb(245, 241, 241);
-    }
+    
 }

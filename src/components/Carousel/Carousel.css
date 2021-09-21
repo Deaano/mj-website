@@ -9,24 +9,21 @@ body{
     margin-left: 16.3%;
 }
 
-.carousel-body{
-    margin-top: -4px;
-    margin-left: 2%;
-    margin-right: 2%;
-    
-}
+
 .carousel{
-    max-height: 200px;
-    padding-left: 10px;
-    
+    max-height: 200%;
+    padding-left: 10px;    
 }
 
 
 
-@media (max-width: 1180px){
+@media (max-width: 1065px){
     .carousel{
-padding-left: 5.5px;
-min-width: 100vw;
+        padding-left: 5.5px;
+        width: 100%;
+        margin-bottom: 110px;
+        margin-top: 20px;
+        
     }
     
     body{

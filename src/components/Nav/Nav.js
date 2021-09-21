@@ -9,10 +9,23 @@ function Nav() {
     const [menu, setMenu] = useState(false);
 
     //Desktop Nav Bar Plus Mobile Nav Bar Original State
+    
+    return (<>
+    <div className='mobile-logo-container'>
+    <img className='mobile-logo' src={Logo} alt='logo'/>
+    </div>
 
-    if(menu === false){
-        return <nav>
-        <ul className='nav-links'>
+    <div className='mobile-menu'>
+        <span className='menu'>Menu</span>
+        <span><i onClick={() =>{ 
+            if (!menu){
+                setMenu(true)
+             }else {
+                 setMenu(false)
+             } }} style={{cursor:'pointer'}}  className='fas fa-bars'></i></span>
+    </div>
+    <nav className={menu ? 'active-nav':'hidden-nav'}>
+        <ul style={{marginBotton:'200px',}} className='nav-links'>
             <li className='nav-item'>
                 <Link href='/' style={{color:'black', textDecoration:'none'}}>OUR RANGE</Link>
             </li>
@@ -20,11 +33,11 @@ function Nav() {
                 <Link href='/' style={{color:'black', textDecoration:'none'}}>THE KNOWLEDGE</Link>
             </li>
             <li className='nav-item'>
-                <Link href='/' style={{color:'black', textDecoration:'none'}}>SOURCING</Link>
+                <span style={{marginRight:'0'}}><Link href='/' style={{color:'black', textDecoration:'none'}}>SOURCING</Link></span>
             </li>
-            <img className='logo' src={Logo} alt='logo'/>
+        <img className='logo' src={Logo} alt='logo'/>
             <li className='nav-item'>
-                <Link href='/' style={{color:'black', textDecoration:'none'}}>ABOUT US</Link>
+            <span><Link href='/' style={{color:'black', textDecoration:'none'}}>ABOUT US</Link></span>
             </li>
             <li className='nav-item'>
                 <Link href='/' style={{color:'black', textDecoration:'none'}}>SKIPPER'S CATCH</Link>
@@ -32,68 +45,13 @@ function Nav() {
             <li className='nav-item'>
                 <Link href='/' style={{color:'red', textDecoration:'none'}}>MY LOCAL M&J</Link>
             </li>
-        </ul>
-
-        
-
-        <div className='mobile-menu'>
-            <span className='menu'>MENU</span>
             
-            <span>
-            <i onClick={() => {
-                if(menu){
-                    setMenu(false)
-                } else {
-                    setMenu(true)
-                }
-            }} class="fas fa-bars"></i></span>
-        </div>
-    </nav>
-
-
-    } else {
-
-        //Mobile Nav Bar
-
-        return <nav> 
-        <img className='logo' style={{marginLeft:'37%',marginTop:'23px'}} src={Logo} alt='logo'/> 
-        
-        <div className='mobile-menu'>
-        <span className='menu'>MENU</span>
-        <span><i onClick={() => {
-            if(menu){
-                setMenu(false)
-            } else {
-                setMenu(true)
-            }
-        }} class="fas fa-bars"></i></span>
-    </div>
-    
-    <div className='mobile-nav' style={{display:'block' ,transition:'ease-out 0.8s'}} >
-        <ul className='nav-links-mobile'>
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'black', textDecoration:'none'}}>OUR RANGE</Link>
-            </li>
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'black', textDecoration:'none'}}>THE KNOWLEDGE</Link>
-            </li>
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'black', textDecoration:'none'}}>SOURCING</Link>
-            </li>
-           
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'black', textDecoration:'none'}}>ABOUT US</Link>
-            </li>
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'black', textDecoration:'none'}}>SKIPPER'S CATCH</Link>
-            </li>
-            <li className='nav-item-mobile'>
-                <Link href='/' onClick={() => setMenu(false)} style={{color:'red', textDecoration:'none'}}>MY LOCAL M&J</Link>
-            </li>
         </ul>
-    </div>
-    </nav>
-    }
-}
+        </nav></>)
+
+        }
+
+        
+
 
 export default Nav

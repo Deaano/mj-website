@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
@@ -17,51 +17,23 @@ const mjCarousel = [
      
   },
   {
+    id:2,
     label: '40 Years Of Fish Mongery',
     imgPath:'https://www.mjseafood.com/assets/uploads/images/large/c6399f5c-7de3-41c0-a532-c96d961e35d4.jpg?1630227076295',
   },
   {
+    id:3,
     label: 'When It Comes',
     imgPath:'https://www.mjseafood.com/assets/uploads/images/large/b1a429cd-e63c-4d83-9bd9-5848ed55ddbf.jpg?1630229529217',
   },
 ];
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    maxWidth: 90,
-    flexGrow: 1,
-    scroll:'hidden',
-  },
-  header: {
-    width:'80%',
-    display: 'flex',
-    alignItems: 'center',
-    height:  '500px',
-    paddingLeft: theme.spacing(4),
-    backgroundColor: theme.palette.background.default,
-    overflowX:'auto'
-  },
-  img: {
-    maxHeight: '80%',
-    display: 'block',
-    width: '100vw',
-    
-  },
-}));
+
 
 function Carousel() {
-  const classes = useStyles();
+  
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
-  
-
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
 
   const handleStepChange = (step) => {
     setActiveStep(step);
@@ -69,7 +41,7 @@ function Carousel() {
 
   return (
     
-    <div className='carousel' style={{width:'100%'}}>
+    <div className='carousel' style={{width:'100%',border:'none'}}>
     
     <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

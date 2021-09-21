@@ -87,7 +87,7 @@ function InfoCards() {
             </div>
             {cardData.map(card =>
              { return(
-                <div className='card-container'>
+                <div key={card.id} className='card-container'>
                     <img className='card-img' src={card.img}  alt={card.alt} />
                     <span className='card-title'>{card.title}</span>
                     <p className='card-info'>{card.info}</p>
