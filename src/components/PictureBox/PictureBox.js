@@ -2,6 +2,7 @@ import React from 'react'
 import EFSR from '../images/EFSR.png'
 import SOTE from '../images/salt of the earth.png'
 import './PictureBox.css'
+
 function PictureBox() {
     return (
         <div className='picture-box-container'>

@@ -13,24 +13,32 @@
 }
 
 .testimonal-title{
-    margin-bottom: -18px;
+    margin-bottom: -40px;
     font-family: 'Courier Prime', monospace;
+    margin-left: 13px;
+    position: relative;
+    top: -10px;
 }
 
 .testimonal-text{
     font-family: 'Courier-new', monospace;
     color: rgb(88, 88, 88);
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 0.9rem;
     padding-right: 30px;
+    width: 44vw;
+    margin-left: 2%;
 }
 
 .testimonal-safely-sourced-container{
     background-color: black;
     color: white;
     height: fit-content;
-    margin-top: 20px;
     
+    width: 360px;
+    margin-right: 3%;
+    position: relative;
+    left: 20px;
 }
 
 .testimonal-img{
@@ -41,8 +49,6 @@
     font-family: 'Courier Prime', monospace;
     padding: 5px 8px 2px 8px;
     font-size: 1.02rem;
-    
-    
 }
 
 .safely-sourced-info{
@@ -70,12 +76,17 @@
     .testimonal-container{
         display: block;
         margin-top: 25px;
-        width: 90vw;
+        width:100%;
         padding-left: 24px;
         position: relative;
     }
-}
-
-.testimonal-img{
-    width: 100%;
+    .testimonal-title{
+        margin-bottom: 5px;
+    }
+    .testimonal-text{
+        width: 98%;
+    }
+    .testimonal-img{
+        width: 100%;
+    }
 }
